@@ -1,9 +1,4 @@
-let m = [
-    [1,1],
-    [1,-1],
-    [-1,1],
-    [-1,-1]
-];
+let m = [[1,1],[1,-1],[-1,1],[-1,-1]];
 
 let letters =['A','B','C','D','E','F','G','H'];
 
@@ -26,13 +21,13 @@ ok_button.onclick = function () {
     let coordinates = [];
 
     for (let i = 0; i < 4; i++){
-        let rx = x + 2*m[i][0];
+        let rx = x + 2*m[i][0]-1;
         let ry = y + m[i][1];
         if ( rx > 0 && ry > 0 && rx <= 8 && ry <= 8) {
             coordinates.push([letters[rx], ry]);
         }
 
-        rx = x + m[i][0];
+        rx = x + m[i][0]-1;
         ry = y + 2*m[i][1];
         if (rx > 0 && ry > 0 && rx <= 8 && ry <= 8) {
             coordinates.push([letters[rx], ry]);
