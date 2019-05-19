@@ -1,0 +1,29 @@
+#chess_desk{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.symbols{
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+tr{
+
+    border-collapse: collapse;
+    height:50px;
+}
+
+td{
+    border-collapse: collapse;
+    width:50px;
+}
+
+
+.black{
+    background: black;
+}
+
+.white{
+    background: white;
+}
